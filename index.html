@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses App</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="section-modal">
+        <div class="modal">
+            <h2 class="modal-title">Новый лимит</h2>
+            <button class="js-btn-close-modal btn-close-modal"></button>
+            <div class="limit-change-wrapper">
+                <input class="js-input-change-limit input-change-limit" type="number">
+                <button class="js-btn-change-limit btn-change-limit">Задать лимит</button>
+                <p class="currency-in-input-change">руб.</p>
+            </div>
+        </div>
+    </div>
+    <h1>Учет расходов</h1>
+    <div class="row">
+        <div class="col">
+            <div class="input-wrapper">
+                <input
+                    class="js-expense-input expense-input"
+                    type="number">
+                    <p class="currency-in-input">руб.</p>
+            </div>
+            <div class="selector-wrapper">
+                <select class="js-selector selector" name="" id="">
+                    <option disabled value="disabled" selected="select">Выберите категорию</option>
+                    <option value="Транспорт">Транспорт</option>
+                    <option value="Кафе и рестораны">Кафе и рестораны</option>
+                    <option value="Аптека">Аптека</option>
+                    <option value="Развлечения">Развлечения</option>
+                </select>
+            </div>
+           
+           
+            <div class="limit-wrapper">
+                <p class="limit"><b class="bold">Лимит: </b><span class="js-limit span"></span> руб.</p>
+                <button class="js-open-modal open-modal"></button>
+                <div class="js-validation validation">Пожалуйста, укажите сумму и выберите категорию</div>
+            </div>
+            <p class="sum"><b class="bold">Всего: </b><span class="js-sum span"></span> руб.</p>
+            <p class="status"><b class="bold">Статус: </b><span class="js-status span status"></span></p>
+            <button class="js-btn-reset btn-reset">Сбросить расходы</button>
+        </div>
+
+        <div class="col">
+            <button class="js-button button">Добавить</button>
+            <h2>История:</h2>
+            <div class="js-history history"></div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
